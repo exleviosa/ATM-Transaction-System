@@ -43,7 +43,7 @@ int main()
     {
         mainMenu();
 
-        printf("\t\t\t___________________________________________________________________\n\n");
+        printf("\t\t\t====================================================================\n\n");
         printf("\t\t\tYour Selection: ");
         scanf("%d", &selection);
 
@@ -68,13 +68,14 @@ int main()
             default:
                 system("CLS");
                 errorMessage();
+                exit(0);
                 break;
         }
-        printf("\t\t\t___________________________________________________________________\n\n");
+        printf("\t\t\t====================================================================\n\n");
         printf("\t\t\tWould you like to perform another transaction?\n");
         printf("\t\t\t[1] Yes\n");
-        printf("\t\t\t[2] No\n");
-        printf("\t\t\t___________________________________________________________________\n\n");
+        printf("\t\t\t[2] No\n\n");
+        printf("\t\t\t====================================================================\n\n");
         printf("\t\t\tYour Selection: ");
         scanf("%d", &choose);
         system("CLS");
@@ -256,7 +257,7 @@ float cashWithdrawal(float balance)
             Beep(800,850);
             printf("\t\t\t___________________________________________________________________\n\n");
             printf("\t\t\t\tYou don't have enough balance in your account...\n");
-            printf("\t\t\tPlease contact to your Bank Customer Service.\n");
+            printf("\t\t\t\t\tPlease contact to Bank Customer Service.\n");
             printf("\t\t\t___________________________________________________________________\n\n");
             printf("\t\t\tYour Available Balance: PHP %.2f\n\n", balance);
         }
