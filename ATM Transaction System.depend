@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1643208807 source:c:\users\user\documents\bsit 1-2n\comp programming\code\codeblocks\atm transaction system\main.c
+	<stdio.h>
+	<stdbool.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+
