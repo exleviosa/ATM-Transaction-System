@@ -35,7 +35,7 @@ The **Automated Teller Machine(ATM) Transaction System** allows bank customers t
  | 1. Documentation  | Documents detailing requirements, algorithm and manual |
  | 2. Architecture |  Behavioural and Structural Diagrams(Both High Level and Low Level) |
  | 3. Implementation | All code and exe file |
- | 3. Test and Output |  Documents with test plans and procedures and Outp |
+ | 3. Test and Output |  Documents with test plans and procedures and Output |
  
 
 ## **Selection Menu**
