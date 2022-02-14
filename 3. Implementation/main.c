@@ -6,7 +6,6 @@
 #include <windows.h>
 #include <time.h>
 
-
 //Macro preprocessor
 // 13 is the ASCII value of ENTER key...
 #define ENTER 13
@@ -23,10 +22,11 @@ float cashWithdrawal(float balance);
 void exitMenu();
 void errorMessage();
 
+//main function
 int main()
 {
     //local variable
-    float balance = 150000.00;
+    float balance = 450000.00;
     int selection, choose;
     bool temp = true;
 
@@ -46,7 +46,8 @@ int main()
         printf("\t\t\t====================================================================\n\n");
         printf("\t\t\tYour Selection: ");
         scanf("%d", &selection);
-
+	
+		// switch for selecting transaction
         switch(selection)
         {
             case 1:
@@ -71,24 +72,25 @@ int main()
                 exit(0);
                 break;
         }
+        
         printf("\t\t\t====================================================================\n\n");
         printf("\t\t\tWould you like to perform another transaction?\n");
         printf("\t\t\t[1] Yes\n");
-        printf("\t\t\t[2] No\n\n");
+        printf("\t\t\t[0] No\n\n");
         printf("\t\t\t====================================================================\n\n");
         printf("\t\t\tYour Selection: ");
         scanf("%d", &choose);
         system("CLS");
 
-        if(choose == 2)
+        if(choose == 0)
         {
             temp = false;
             exitMenu();
         }
     }
-
     return 0;
 }
+
 
 //Getting and masking pin from the user
 void getPin(char* inputPin, int maxPinLength)
@@ -125,12 +127,13 @@ void getPin(char* inputPin, int maxPinLength)
         }
     }while(ch != ENTER && pinLength < 8);
     printf("\n");
-}
+}//getPin() function
+
 
 //defining a function to validate PIN from the user
 bool pinValidation()
 {
-    char validPin[] = "526303";
+    char validPin[] = "123456";
     char pin[8];
     int attemptCount = 0;
 
@@ -159,9 +162,10 @@ bool pinValidation()
         printf("\t\t\t\t\tPLEASE CONTACT THE BANK CUSTOMER SERVICE\n");
         exit(0);
     }
-}
+}// pinValidation() function
 
 
+//defining function for the main menu or selecting transaction
 int mainMenu()
 {
     printf("\n\t\t\t*********************\tSELECT TRANSACTION\t********************\n\n");
@@ -170,9 +174,10 @@ int mainMenu()
     printf("\t\t\t[3] Withdrawal\n");
     printf("\t\t\t[4] Exit\n\n");
     return 6;
-}//Main menu
+}//mainMEnu() function
 
 
+//defining function for checking the account balance
 float checkBal(float balance)
 {
     printf("\n");
@@ -193,8 +198,10 @@ float checkBal(float balance)
     printf("\n\t\t\t\t\t\tTHIS IS YOUR TRANSACTION RECORD\n");
     printf("\t\t\t\t\tTHANK YOU FOR BANKING WITH US. HAVE A GREAT DAY!\n\n");
     return balance;
-}//balance inquiry
+}//checkBal() function
 
+
+//function definition of cash deposition
 float cashDeposit(float balance)
 {
     float deposit;
@@ -215,9 +222,10 @@ float cashDeposit(float balance)
     printf("\t\t\tYou have deposited: PHP %.2f\n", deposit);
     printf("\t\t\tYour new total balance: PHP %.2f\n\n", balance);
     return balance;
+}//cashDeposit() function
 
-}//Cash deposit
 
+//function definition of cash withdrawal
 float cashWithdrawal(float balance)
 {
     float withdrawal;
@@ -263,21 +271,23 @@ float cashWithdrawal(float balance)
         }
         return balance;
     }
+}//cashWithdrawal() function
 
 
-}//Cash withdrawal
-
+//function definition for exiting menu
 void exitMenu()
 {
     printf("\n\t\t\t******************************************************************\n\n");
     printf("\t\t\t\tTHANK YOU FOR BANKING WITH US. HAVE A GREAT DAY!\n");
     printf("\n\t\t\t******************************************************************\n\n");
-}
+}//exitMenu() function
 
+
+//function definition for error message when selected number is invalid
 void errorMessage()
 {
     Beep(800,800);
     Beep(800,800);
     Beep(800,850);
     printf("\n\t\t\t\t\tYou have selected invalid number\n");
-}
+}//errorMessage() function

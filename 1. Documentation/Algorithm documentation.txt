@@ -1,0 +1,42 @@
+Algorithm for checking balance:
+
+Step 1: Insert ATM card into the machine
+Step 2: Input 6-Digit ATM Pin
+	2.1: If PIN is correct, print access granted
+	2.2: Else, Invalid Pin until 3 attempt
+Step 3: Select the type of transaction
+Step 4: Choose Balance Inquiry 
+Step 5: Check the available balance
+Step 6: Print the transaction record
+Step 7: Another transaction
+	7.1: If the user enter 1 for yes, go to transaction menu
+	7.2: Else, exit the program
+
+Algorithm for depositing cash
+
+Step 1: Insert ATM card into the machine
+Step 2: Input 6-Digit ATM Pin
+	2.1: If PIN is correct, print access granted
+	2.2: Else, Invalid Pin until 3 attempt
+Step 3: Select the type of transaction
+Step 4: Choose Deposit
+Step 5: Enter account number
+Step 6: Enter amount to be deposited
+Step 7: Print deposited amount and total balance
+Step 8: Another transaction
+	8.1: If the user enter 1 for yes, go to transaction menu
+	8.2: Else, exit the program
+
+Algorithm for cash withdrawal
+
+Step 1: Insert ATM card into the machine
+Step 2: Input 6-Digit ATM Pin
+	2.1: If PIN is correct, print access granted
+	2.2: Else, Invalid Pin until 3 attempt
+Step 3: Select the type of transaction
+Step 4: Choose Withdrawal
+Step 5: Enter amount to be withdrawn
+Step 6: Print the transaction record
+Step 8: Another transaction
+	8.1: If the user enter 1 for yes, go to transaction menu
+	8.2: Else, exit the program
