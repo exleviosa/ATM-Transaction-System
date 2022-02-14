@@ -28,6 +28,16 @@ The **Automated Teller Machine(ATM) Transaction System** allows bank customers t
 ## **Documentation of the system**
 ![Flowchart](Flowchart%20ATM.jpg "Flowchart")
 
+## **Folder Structure**
+
+ | Folder | Description |
+ |--|--|
+ | 1. Documentation  | Documents detailing requirements, algorithm and manual |
+ | 2. Architecture |  Behavioural and Structural Diagrams(Both High Level and Low Level) |
+ | 3. Implementation | All code and exe file |
+ | 3. Test and Output |  Documents with test plans and procedures and Outp |
+ 
+
 ## **Selection Menu**
 
  | Description | Status |
@@ -36,7 +46,8 @@ The **Automated Teller Machine(ATM) Transaction System** allows bank customers t
  | Balance Inquiry | Implemented |
  | Deposit |  Implemented |
  | Withdrawal |  Implemented |
- | Graphical User Interface | Not Implemented  |
+ | Exit |  Implemented |
+
 
 ## **Learning Resources**
 * Github
